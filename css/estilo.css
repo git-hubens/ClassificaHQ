@@ -1,0 +1,277 @@
+/* Definições gerais do corpo da página */
+body {
+    background-color: #f5f5f5; /* Cor de fundo clara para o corpo da página */
+    font-family: 'Roboto', sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    background-color: #4a737e; /* Cor de fundo da navbar */
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    align-items: center; /* Alinha verticalmente os itens */
+    position: relative;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #fff; /* Cor do texto da navbar */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px; /* Espaçamento entre os links da navbar */
+}
+
+/* Estilos do cabeçalho e rodapé */
+.header, .footer {
+    background-color: #4a737e; /* Cor de fundo do cabeçalho e rodapé */
+    color: #fff; /* Cor do texto no cabeçalho e rodapé */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Texto centralizado */
+}
+
+.header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Ícone do toggler customizado */
+}
+
+/* Estilos da área de conteúdo */
+.content {
+    padding: 40px; /* Espaçamento interno */
+    background-color: #e0f2f1; /* Cor de fundo do conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor do conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 20px auto; /* Margem automática para centralizar */
+    width: 80%; /* Largura do conteúdo */
+}
+
+.content h1, .content h2 {
+    color: #b36e67; /* Cor do texto */
+}
+
+.content h1 {
+    font-size: 2.5em; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+.content h2 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilos dos rótulos do formulário */
+.form-label {
+    color: #b36e67; /* Cor do texto dos rótulos */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilos dos campos do formulário */
+.form-control {
+    border: 2px solid #b36e67; /* Borda dos campos */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.form-control:focus {
+    border-color: #d9b1a6; /* Cor da borda ao focar no campo */
+    box-shadow: none; /* Sem sombra ao focar */
+}
+
+/* Estilos dos botões */
+.btn-primary {
+    background-color: #b36e67; /* Cor de fundo do botão */
+    border: none; /* Sem borda */
+}
+
+.btn-primary:hover {
+    background-color: #d9b1a6; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Definir cores oficiais para classificações indicativas */
+.livre {
+    background-color: #00af51; /* Verde */
+    color: #000; /* Texto preto para legibilidade */
+}
+
+.classificacao-10 {
+    background-color: #00ccff; /* Azul */
+    color: #fff; /* Texto branco para legibilidade */
+}
+
+.classificacao-12 {
+    background-color: #ffcc00; /* Amarelo */
+    color: #000; /* Texto preto para legibilidade */
+}
+
+.classificacao-14 {
+    background-color: #ff6600; /* Laranja */
+    color: #fff; /* Texto branco para legibilidade */
+}
+
+.classificacao-16 {
+    background-color: #fe0000; /* Vermelho */
+    color: #fff; /* Texto branco para legibilidade */
+}
+
+.classificacao-18 {
+    background-color: #000000; /* Preto */
+    color: #ffffff; /* Texto branco para legibilidade */
+}
+
+/* Garantir que os bullets sejam sempre visíveis */
+ul {
+    list-style-position: inside;
+    padding-top: 10px; /* Espaçamento do topo */
+}
+
+.form-column {
+    background-color: #e0f2f1; /* Cor de fundo clara */
+    padding: 25px; /* Espaçamento interno aumentado */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.result-column {
+    background-color: #e0e0e0; /* Cor de fundo diferente para a coluna de resultados */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Ajustes dos resultados */
+.result-list {
+    padding-left: 20px; /* Aumenta o padding à esquerda */
+    padding-right: 20px; /* Aumenta o padding à direita */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    list-style-type: disc; /* Estilo de lista */
+}
+
+.result-list li {
+    padding-left: 15px; /* Aumenta o padding à esquerda */
+    padding-right: 15px; /* Aumenta o padding à direita */
+    padding-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+.artist-links a {
+    color: #ffa500; /* Cor laranja */
+    font-family: 'Bangers', cursive; /* Fonte de quadrinhos */
+    text-decoration: none;
+}
+
+.artist-links a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+.artist-links i {
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.classification {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.classification-img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.classification div {
+    flex: 1;
+}
+
+/* Posicionamento do logo */
+.navbar-brand img {
+    position: absolute; /* Posicionamento absoluto para o logo */
+    top: -18px; /* Ajuste este valor conforme necessário para mover o logo para fora do topo */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o logo horizontalmente */
+    z-index: 1; /* Garante que o logo esteja acima de outros elementos */
+}
+
+/* Certifique-se de que o cabeçalho tenha uma posição relativa */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    align-items: center;
+    width: 100%;
+}
+
+header a {
+    color: var(--primary-text-color);
+}
+
+header a:hover {
+    color: var(--highlight-color);
+}
+
+/* Ajustes responsivos para dispositivos móveis */
+@media (max-width: 767px) {
+    .navbar-brand img {
+        position: relative; /* Posicionamento relativo para o logo no modo celular */
+        top: 0;
+        left: 0;
+        transform: none; /* Remove a transformação de centralização */
+        width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+        margin-left: 10px; /* Adiciona margem para alinhamento */
+    }
+
+    .navbar-nav {
+        justify-content: center; /* Centraliza os itens do menu no modo celular */
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        text-align: center; /* Centraliza o conteúdo dentro do menu colapsado */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Move o botão toggler para a direita */
+    }
+
+    .content {
+        padding: 20px; /* Reduz o padding interno para telas menores */
+        width: 100% !important; /* Usa 100% da largura disponível para telas menores */
+        margin: 0 !important; /* Remove margem */
+        box-shadow: none; /* Remove a sombra */
+        border-radius: 0; /* Remove bordas arredondadas */
+    }
+
+    .col-lg-8, .col-lg-4 {
+        padding: 0 15px; /* Adiciona padding para evitar que o conteúdo fique espremido */
+        width: 100%; /* Faz com que as colunas usem 100% da largura disponível */
+    }
+
+    .container {
+        padding: 0; /* Remove padding da container */
+        margin: 0; /* Remove margens da container */
+        width: 100%; /* Define a largura como 100% */
+    }
+}
+
+/* Estilos dos links */
+a {
+    color: #4a737e; /* Cor principal */
+    text-decoration: none; /* Remove sublinhado padrão */
+}
+
+a:hover {
+    color: #b36e67; /* Cor de destaque ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos dos links no rodapé */
+.footer a {
+    color: #ffa500; /* Cor laranja para links no rodapé */
+}
+
+.footer a:hover {
+    color: #ffcc00; /* Cor amarela ao passar o mouse nos links do rodapé */
+}
