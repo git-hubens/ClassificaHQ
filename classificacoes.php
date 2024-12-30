@@ -44,7 +44,7 @@
                         Primeiro, é importante notar que há uma diferença entre a <strong>Classificação
                             Indicativa</strong> e a <strong>Autoclassificação</strong>. A <strong>Classificação
                             Indicativa</strong> é uma avaliação oficial realizada pelo <a
-                            href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1">Ministério da
+                            href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1" target="_blank">Ministério da
                             Justiça</a>, enquanto a <strong>Autoclassificação</strong> é inicialmente feita pelos
                         próprios produtores de conteúdo, sujeita à revisão e ajuste pelo Ministério da Justiça. Ambos os
                         tipos de classificação têm diretrizes claras sobre como devem ser exibidos ao público,
@@ -53,10 +53,10 @@
                     </p>
                     <p>
                         Uma segunda ressalva muito importante a ser feita é que a "<a
-                            href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1/paginas-classificacao-indicativa/CLASSINDARTESVISUAIS_Guia_27042022_versaofinal.pdf">Classificação
+                            href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1/paginas-classificacao-indicativa/CLASSINDARTESVISUAIS_Guia_27042022_versaofinal.pdf" target="_blank">Classificação
                             Indicativa: Guia Prático de Artes Visuais</a>" é focada em artes visuais, como exposições,
                         instalações, pinturas, esculturas e fotografias. Já o "<a
-                            href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1/classind-audio-visual-4-edicao-2021.pdf">Guia
+                            href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1/classind-audio-visual-4-edicao-2021.pdf" target="_blank">Guia
                             Prático de Classificação Indicativa - 4ª edição (2021)</a>" se concentra principalmente em
                         obras audiovisuais, como filmes, séries de TV, vídeos musicais e jogos eletrônicos.
                     </p>
@@ -74,10 +74,10 @@
                     </p>
                     <ul>
                         <li><a
-                                href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1/paginas-classificacao-indicativa/como-classificar">Obter
+                                href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1/paginas-classificacao-indicativa/como-classificar" target="_blank">Obter
                                 Classificação Indicativa</a></li>
                         <li><a
-                                href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1/paginas-classificacao-indicativa/livros-de-rpg">Livros
+                                href="https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1/paginas-classificacao-indicativa/livros-de-rpg" target="_blank">Livros
                                 de RPG - Ministério da Justiça e Segurança Pública</a></li>
                     </ul>
                     <p>

@@ -1,22 +1,21 @@
 $(document).ready(function() {
-    const checkboxes = $('input[type="checkbox"]'); // Seleciona todos os checkboxes na página
-    const results = $('#resultado'); // Seleciona o elemento que exibirá os resultados
-    const classificarBtn = $('#classificarBtn'); // Seleciona o botão de classificar
-    const limparBtn = $('#limparBtn'); // Seleciona o botão de limpar
+    const checkboxes = $('input[type="checkbox"]');
+    const results = $('#resultado');
+    const classificarBtn = $('#classificarBtn');
+    const limparBtn = $('#limparBtn');
 
     function updateResults() {
-        results.html(''); // Limpa os resultados anteriores
-        let selecoes = []; // Cria uma lista para armazenar as seleções
-        let maiorClassificacao = 0; // Inicializa a variável para armazenar a maior classificação
+        results.html(''); // Clear previous results
+        let selecoes = [];
+        let maiorClassificacao = 0;
 
         checkboxes.each(function() {
-            if ($(this).is(':checked')) { // Verifica se o checkbox está marcado
-                const valorClassificacao = parseInt($(this).val()); // Obtém o valor da classificação do checkbox
-                const nomeCategoria = $(this).attr('name'); // Obtém o nome da categoria do checkbox
-                const textoCategoria = $(this).next('legend').text().trim(); // Obtém o texto da categoria do checkbox
-                const topicoCategoria = $(this).data('topico'); // Obtém o tópico do checkbox a partir de um atributo data
+            if ($(this).is(':checked')) {
+                const valorClassificacao = parseInt($(this).val());
+                const nomeCategoria = $(this).attr('name');
+                const textoCategoria = $(this).next('legend').text().trim();
+                const topicoCategoria = $(this).data('topico'); // Assumindo que o tópico está armazenado no data attribute
 
-                // Adiciona as informações da seleção à lista
                 selecoes.push({
                     valor: valorClassificacao,
                     nome: nomeCategoria,
@@ -24,7 +23,6 @@ $(document).ready(function() {
                     topico: topicoCategoria
                 });
 
-                // Atualiza a maior classificação se o valor atual for maior
                 if (valorClassificacao > maiorClassificacao) {
                     maiorClassificacao = valorClassificacao;
                 }
@@ -35,7 +33,6 @@ $(document).ready(function() {
             return; // Não exibe nada se nenhuma seleção for feita
         }
 
-        // Define os detalhes das classificações
         const classificacoesDetalhadas = {
             0: `
             <h3>Classificação Indicativa: Livre</h3>
@@ -100,7 +97,6 @@ $(document).ready(function() {
         `
         };
 
-        // Define as classes CSS para as classificações
         const classificacoesClasses = {
             0: "livre",
             10: "classificacao-10",
@@ -110,7 +106,6 @@ $(document).ready(function() {
             18: "classificacao-18"
         };
 
-        // Define as imagens para as classificações
         const classificacoesImagens = {
             0: "Classind_AL.svg.png",
             10: "Classind_A10.svg.png",
@@ -120,7 +115,6 @@ $(document).ready(function() {
             18: "Classind_A18.svg.png"
         };
 
-        // Define as imagens pequenas para as classificações
         const classificacoesImagensPequenas = {
             0: "Classind_AL.svg_30x30.png",
             10: "Classind_A10.svg_30x30.png",
@@ -130,7 +124,6 @@ $(document).ready(function() {
             18: "Classind_A18.svg_30x30.png"
         };
 
-        // Cria o HTML das seleções feitas
         let selecoesHtml = selecoes.map(selecao => {
             return `<li class="${classificacoesClasses[selecao.valor]}">
                         <img src="imgs/${classificacoesImagensPequenas[selecao.valor]}" alt="${selecao.texto} (${selecao.topico})" style="width: 30px; height: 30px; margin-right: 5px;">
@@ -138,7 +131,6 @@ $(document).ready(function() {
                     </li>`;
         }).join('');
 
-        // Atualiza o conteúdo dos resultados com as classificações e seleções
         results.html(`
         <div class="text-center">
             <img src="imgs/${classificacoesImagens[maiorClassificacao]}" alt="Classificação ${maiorClassificacao}" />
@@ -151,10 +143,8 @@ $(document).ready(function() {
     `);
     }
 
-    // Adiciona evento para atualizar os resultados quando os checkboxes são alterados
     checkboxes.on('change', updateResults);
 
-    // Adiciona evento ao botão de classificar para atualizar os resultados e rolar a página
     classificarBtn.on('click', function(event) {
         event.preventDefault();
         updateResults();
@@ -163,7 +153,6 @@ $(document).ready(function() {
         }, 'slow');
     });
 
-    // Adiciona evento ao botão de limpar para desmarcar os checkboxes, limpar os resultados e rolar a página para o topo
     limparBtn.on('click', function(event) {
         event.preventDefault();
         checkboxes.prop('checked', false);
@@ -173,5 +162,5 @@ $(document).ready(function() {
         }, 'slow');
     });
 
-    updateResults(); // Atualiza os resultados ao carregar a página
+    updateResults();
 });
